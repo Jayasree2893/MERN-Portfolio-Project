@@ -1,0 +1,39 @@
+.techstack-content {
+  margin-left: 230px;
+  padding: 80px 80px;
+}
+.techstack-heading {
+  text-align: center;
+  color: #fbeaeb;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.techstack-heading hr {
+  color: #fbeaeb;
+  width: 500px;
+  margin: 10px auto;
+}
+.card {
+  border-radius: 10px !important;
+}
+.card-color {
+  background-color: "#FBEAEB" !important;
+}
+.techstack-body {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px !important;
+  font-size: 16px;
+  align-items: center;
+  padding: 10px 0px;
+}
+.techstack-body:hover {
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  /* transform: scale(1.1);
+  transition: 1s; */
+}
+.card-title {
+  align-items: center;
+  vertical-align: middle;
+}

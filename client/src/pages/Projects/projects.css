@@ -1,0 +1,68 @@
+.projects-content {
+  margin-left: 200px;
+  padding: 50px 80px;
+  color: #2f3c7e;
+  text-align: center;
+}
+.projects-content hr {
+  color: #2f3c7e;
+  width: 250px;
+  margin: 10px auto;
+}
+.project-heading {
+  text-align: center;
+  color: #2f3c7e;
+}
+.badge {
+  background-color: #990011 !important;
+}
+.btn-badge {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  padding: 10px 15px;
+  background-color: #990011;
+}
+.project-body {
+  margin-top: 50px;
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: 50px;
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  cursor: pointer;
+}
+.card img {
+  width: 320px;
+  height: 300px;
+}
+.btn-view {
+  color: #2f3c7e;
+  font-weight: 700;
+  border: none;
+  background-color: white;
+}
+.btn-view:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  color: #2f3c7e !important;
+  text-decoration: underline;
+}
+.projectTitle {
+  color: #ff7f50;
+}
+.card-footer:hover {
+  background-color: #2f3c7e;
+  transition: 3s;
+  cursor: pointer;
+}
+.exampleModalLabel {
+  color: #2f3c7e;
+}
+.content {
+  justify-content: center;
+  text-align: justify;
+}

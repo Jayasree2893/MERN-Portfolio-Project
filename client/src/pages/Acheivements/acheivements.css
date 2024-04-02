@@ -1,0 +1,17 @@
+.acheivements {
+  padding: 50px 50px;
+  margin-left: 230px;
+  color: #fbeaeb;
+}
+.acheivements-heading h1 {
+  color: #2f3c7e;
+}
+
+.acheivements-heading hr {
+  color: #2f3c7e;
+  width: 350px;
+  margin: 10px auto;
+}
+.acheivements-body {
+  margin-top: 50px;
+}

@@ -1,0 +1,60 @@
+.work {
+  margin-left: 230px;
+}
+
+.work-exp {
+  padding: 60px 0px;
+}
+
+.work-exp h1 {
+  color: #fbeaeb;
+}
+.work-exp h3 {
+  font-weight: bold;
+}
+.resp {
+  color: #2f3c7e;
+}
+.work-exp hr {
+  color: #fbeaeb;
+  width: 500px;
+  margin: 10px auto;
+}
+.workList {
+  text-align: justify;
+}
+
+.work-exp .vertical-timeline-element-title {
+  color: #ff7f50;
+}
+
+.work-exp .vertical-timeline-element-subtitle {
+  color: grey;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+.custom-date-style {
+  color: #fbeaeb !important;
+}
+
+/* ===== DARK MODE ========== */
+#dark .work {
+  background-color: #643a6b;
+}
+
+#dark .work-exp h2 {
+  color: white;
+}
+
+/* =================== */
+
+@media (max-width: 600px) {
+  .work {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+  }
+  .work hr {
+    width: 280px;
+  }
+}

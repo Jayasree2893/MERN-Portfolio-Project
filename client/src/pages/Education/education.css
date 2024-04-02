@@ -1,0 +1,46 @@
+.education {
+  padding: 50px 0px;
+  margin-left: 230px;
+  color: #fbeaeb;
+}
+
+.education hr {
+  color: #fbeaeb;
+  width: 450px;
+  margin: 10px auto;
+}
+
+.education h1 {
+  font-weight: bold;
+  color: #fbeaeb;
+}
+
+.education .vertical-timeline-element-title {
+  color: #fbeaeb;
+}
+
+.education .vertical-timeline-element-subtitle {
+  color: #fbeaeb;
+}
+
+/* ========= DARK MODE ============ */
+
+#dark .education {
+  background-color: rgba(255, 255, 255, 0.095);
+}
+
+/* ========================== */
+@media (max-width: 600px) {
+  .education {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+  }
+  .education h2 {
+    padding-top: 20px;
+  }
+  .education hr {
+    width: 280px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,36 @@
+.about-content {
+  display: flex;
+  margin-left: 230px;
+}
+.profile-img {
+  margin: 100px 40px 50px 100px;
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px;
+}
+.profile-img img {
+  height: 500px;
+  width: 450px;
+  border-radius: 10px;
+}
+.about {
+  margin: 170px 100px 50px 50px;
+}
+.about h1 {
+  text-align: center;
+  color: #2f3c7e;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.about hr {
+  color: #2f3c7e;
+  width: 400px;
+  margin: 10px auto;
+}
+.about p {
+  text-align: justify;
+  margin-top: 50px;
+  font-size: large;
+  color: #1e1e2c;
+  line-height: 2.5rem;
+  font-weight: 600;
+}

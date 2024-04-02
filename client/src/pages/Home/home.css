@@ -1,0 +1,46 @@
+.home-content {
+  color: #fbeaeb;
+  align-items: center;
+  padding: 200px 80px;
+  margin-left: 230px;
+  height: 600px;
+}
+.home-content h1 {
+  font-family: "Robato", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  font-style: normal;
+  letter-spacing: 0.1rem;
+  margin-top: 80px;
+}
+.home-content h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffcc00;
+  margin-top: 20px;
+  letter-spacing: 0.25rem;
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+.btn-hire {
+  background-color: #ff7f50;
+  color: #fbeaeb;
+  font-weight: 500;
+}
+.btn-hire:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: #ff7f50;
+  color: #fbeaeb;
+}
+.jobpic {
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+.jobpic img {
+  height: 450px;
+  width: 450px;
+  margin-left: 50px;
+}

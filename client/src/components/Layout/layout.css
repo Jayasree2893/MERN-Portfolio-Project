@@ -1,0 +1,91 @@
+.sidebar-section {
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+.sidebar {
+  height: 100vh;
+  background-color: #1e1e2c;
+  width: 90px;
+  position: fixed;
+}
+.sidebar-toggle {
+  width: 230px;
+}
+.sidebar-toggle-icons {
+  display: flex;
+  justify-content: right;
+}
+.sidebar-toggle-icons p {
+  cursor: pointer;
+}
+.sidebar-toggle-icons svg {
+  background-color: #ff7f50;
+  color: white;
+  margin-top: 30px;
+}
+.home-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #2f3c7e;
+}
+.about-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fbeaeb;
+}
+.experience-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 1670px;
+  background-color: #2f3c7e;
+}
+.acheivements-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 105vh;
+  background-color: #fbeaeb;
+}
+.techstack-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #2f3c7e;
+}
+.projects-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fbeaeb;
+}
+.education-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 300px;
+  background-color: #2f3c7e;
+}
+.contact-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fbeaeb;
+}
+.footer-container {
+  padding: 3px 320px;
+  margin: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #2f3c7e;
+  text-align: center;
+  color: #fbeaeb;
+}
