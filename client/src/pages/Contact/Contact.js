@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import axios from "axios";
 import emailjs from "@emailjs/browser";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 import { Fade, Flip } from "react-reveal";
@@ -8,23 +9,46 @@ import "./contact.css";
 const Contact = () => {
   const form = useRef();
   const [isSuccess, setIsSuccess] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  const sendEmail = (e) => {
+  const { name, email, message } = formData;
+  console.log({ name, email, message });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm("service_7usm9xm", "template_torm94j", form.current, {
-        publicKey: "5COPkA7TbX3iiNcyM",
-      })
-      .then(
-        (result) => {
-          console.log("SUCCESS!", result.text);
-          setIsSuccess(true); // Set success state to true
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+    try {
+      await axios.post("http://localhost:5001/contact", formData);
+      setFormData({ name: "", email: "", message: "" });
+
+      emailjs
+        .sendForm(
+          "service_7usm9xm",
+          "template_torm94j",
+          form.current,
+          "5COPkA7TbX3iiNcyM"
+        )
+        .then(
+          (result) => {
+            console.log("Email sent successfully:", result.text);
+            setIsSuccess(true);
+          },
+          (error) => {
+            console.error("Failed to send email:", error.text);
+          }
+        );
+    } catch (err) {
+      console.error(err.response.data.message);
+    }
   };
 
   return (
@@ -70,22 +94,26 @@ const Contact = () => {
                         </div>
                       </div>
                     ) : (
-                      <form action="" ref={form} onSubmit={sendEmail}>
+                      <form ref={form} onSubmit={handleSubmit}>
                         <div className="row px-3">
                           <input
                             type="text"
                             placeholder="Enter your Name"
                             className="mb-3"
-                            name="user_name"
+                            name="name"
+                            value={name}
+                            onChange={handleChange}
                             required
                           />
                         </div>
                         <div className="row px-3">
                           <input
                             type="email"
-                            name="user_email"
+                            name="email"
                             placeholder="Enter Your Email Address"
                             className="mb-3"
+                            value={email}
+                            onChange={handleChange}
                             required
                           />
                         </div>
@@ -95,11 +123,15 @@ const Contact = () => {
                             name="message"
                             placeholder="Write your message"
                             className="mb-3"
+                            value={message}
+                            onChange={handleChange}
                             required
                           />
                         </div>
                         <div className="row px-3">
-                          <button className="button">SEND MESSAGE</button>
+                          <button className="button" type="submit">
+                            SEND MESSAGE
+                          </button>
                         </div>
                       </form>
                     )}
